@@ -25,7 +25,7 @@ app.use(session({
         maxAge : 1000 * 60 * 60 * 24
     },
     store : mongoStore.create({
-        mongoUrl : "mongodb://127.0.0.1:27017/user",
+        mongoUrl : "mongodb+srv://ronittmehra:ronitt272@cluster0.hngqjk5.mongodb.net/user",
         collectionName : "sessions"
     })
 }));
