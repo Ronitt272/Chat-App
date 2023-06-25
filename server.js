@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://127.0.0.1:27017/user'); 
+mongoose.connect("mongodb+srv://ronittmehra:ronitt272@cluster0.hngqjk5.mongodb.net/user"); 
 const User = require('./models/user'); //importing the model
 app.use(express.json()); //access the body
 app.use(express.urlencoded({extended: true})); //form does not send url encoded data, so with this, form will send url encoded data 
